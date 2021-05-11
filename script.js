@@ -27,5 +27,5 @@ formElement.addEventListener("submit", (event) => {
         default:
             result = "Ups, coś poszło nie tak...";
     }
-    resultElement.innerHTML = result + `${currency}`;
+    resultElement.innerHTML = result + ` ${currency}`;
 });
