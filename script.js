@@ -1,31 +1,41 @@
-let formElement = document.querySelector(".form");
-let plnElement = document.querySelector(".js-pln");
-let currencyElement = document.querySelector(".js-currency");
-let resultElement = document.querySelector(".js-result");
+{
+    const calculateExchange = (plnValue, currency) => {
+        const EUR = 4.5829;
+        const USD = 3.8066;
+        const GBP = 5.2908;
 
-let EUR = 4.5829;
-let USD = 3.8066;
-let GBP = 5.2908;
+        switch (currency) {
+            case "EUR":
+                return (plnValue / EUR).toFixed(2);
+            case "GBP":
+                return (plnValue / GBP).toFixed(2);
+            case "USD":
+                return (plnValue / USD).toFixed(2);
+            default:
+                return "Ups, coś poszło nie tak...";
+        };
+    };
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+    const updateTextResult = (result, currency) => {
+        const resultElement = document.querySelector(".js-result");
+        resultElement.innerHTML = result + ` ${currency}`;
+    };
 
-    let PLN = +plnElement.value;
-    let currency = currencyElement.value;
-    let result;
+    const onFormSumbit = (e) => {
+        e.preventDefault();
 
-    switch (currency) {
-        case "EUR":
-            result = (PLN / EUR).toFixed(2);
-            break;
-        case "GBP":
-            result = (PLN / GBP).toFixed(2);
-            break;
-        case "USD":
-            result = (PLN / USD).toFixed(2);
-            break;
-        default:
-            result = "Ups, coś poszło nie tak...";
-    }
-    resultElement.innerHTML = result + ` ${currency}`;
-});
+        const plnValueElement = document.querySelector(".js-pln");
+        const currency = document.querySelector(".js-currency").value;
+        const plnValue = +plnValueElement.value;
+        let result = calculateExchange(plnValue, currency);
+
+        updateTextResult(result, currency);
+    };
+
+    const init = () => {
+        const formElement = document.querySelector(".form");
+        formElement.addEventListener("submit", onFormSumbit);
+    };
+
+    init();
+};
