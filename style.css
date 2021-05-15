@@ -13,7 +13,7 @@ html {
     padding: 10px 10px;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 22px;
-    background-image: url(https://image.freepik.com/darmowe-wektory/analiza-rynku-akcji-i-handel-akcjami-symbole-walut-wykresy-biznesowe-i-globalne-transfery-pieniezne_115579-1283.jpg);
+    background-image: url("https://image.freepik.com/darmowe-wektory/analiza-rynku-akcji-i-handel-akcjami-symbole-walut-wykresy-biznesowe-i-globalne-transfery-pieniezne_115579-1283.jpg");
     background-size: cover;
 }
 
@@ -27,6 +27,7 @@ html {
 .form__legend {
     font-size: 34px;
     padding: 2px;
+    text-transform: uppercase;
 }
 
 .form__fieldset {
