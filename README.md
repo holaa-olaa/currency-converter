@@ -8,7 +8,7 @@
 * [Setup](#setup)
 
 ## Demo
-Check it out! ---> https://holaa-olaa.github.io/homepage/
+Check it out! ---> https://holaa-olaa.github.io/currency-converter/
 
 ## General info
 A simple application that allows you to convert exchange rates based on constant variables specified in code. It uses functions in JavaScript allowing for quick and accurate calculations. Graphic design using CSS. 
