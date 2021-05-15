@@ -11,8 +11,6 @@
                 return (plnValue / GBP).toFixed(2);
             case "USD":
                 return (plnValue / USD).toFixed(2);
-            default:
-                return "Ups, coś poszło nie tak...";
         };
     };
 
@@ -38,4 +36,4 @@
     };
 
     init();
-};
+}
