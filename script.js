@@ -25,7 +25,7 @@
         const plnValueElement = document.querySelector(".js-pln");
         const currency = document.querySelector(".js-currency").value;
         const plnValue = +plnValueElement.value;
-        let result = calculateExchange(plnValue, currency);
+        const result = calculateExchange(plnValue, currency);
 
         updateTextResult(result, currency);
     };
