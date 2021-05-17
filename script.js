@@ -22,16 +22,16 @@
     const onFormSumbit = (e) => {
         e.preventDefault();
 
-        const plnValueElement = document.querySelector(".js-pln");
+        const plnElement = document.querySelector(".js-pln");
         const currency = document.querySelector(".js-currency").value;
-        const plnValue = +plnValueElement.value;
+        const plnValue = +plnElement.value;
         const result = calculateExchange(plnValue, currency);
 
         updateTextResult(result, currency);
     };
 
     const init = () => {
-        const formElement = document.querySelector(".form");
+        const formElement = document.querySelector(".js-form");
         formElement.addEventListener("submit", onFormSumbit);
     };
 
