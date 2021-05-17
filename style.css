@@ -20,7 +20,7 @@ html {
 .form {
     margin: auto 10px;
     padding: 30px 30px;
-    background-color: rgb(211, 228, 233);
+    background-color: hsl(194, 33%, 87%);
     border-radius: 10px;
 }
 
@@ -46,7 +46,7 @@ html {
     width: 100%;
     max-width: 300px;
     padding: 10px;
-    border: solid 2px grey;
+    border: solid 2px hsl(0, 0%, 50%);
     border-radius: 10px;
 }
 
@@ -62,17 +62,17 @@ html {
     margin: 10px 0;
     border-radius: 10px;
     border: none;
-    background-color: rgb(37, 77, 129);
-    color: #ffffff;
+    background-color: hsl(214, 55%, 33%);
+    color: hsl(0, 0%, 100%);
     letter-spacing: 1.6px;
 }
 
 .form__button:hover {
-    background-color: rgb(37, 77, 149);
+    background-color: hsl(219, 60%, 36%);
 }
 
 .form__button--reset:hover {
-    background-color: rgb(212, 126, 126);
+    background-color: hsl(0, 50%, 66%);
 }
 
 .form__paragraph {
@@ -81,8 +81,8 @@ html {
     letter-spacing: 1.7px;
     padding: 10px;
     margin: 5px;
-    background-color: rgb(101, 135, 179);
-    color: white;
+    background-color: hsl(214, 34%, 55%);
+    color: hsl(0, 0%, 100%);
     max-width: 100%;
     border-radius: 15px;
 }
