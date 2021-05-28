@@ -1,5 +1,6 @@
-# To Do List
-![Previous Side Trailer]
+
+# Currency Converter
+![Previous Side Trailer](readmeGif.gif)
 
 ## Table of contents
 * [Demo](#demo)
@@ -11,7 +12,7 @@
 Check it out! ---> https://holaa-olaa.github.io/currency-converter/
 
 ## General info
-This is a simple application created mainly with JavaScript that allows you to add and edit a simple task list. Appearance and content created using HTML and CSS.
+A simple application that allows you to convert exchange rates based on constant variables specified in code. It uses functions in JavaScript allowing for quick and accurate calculations. Graphic design using CSS. 
 
 Created for the course: YouCode II Frontend Developer
 
@@ -19,8 +20,7 @@ Created for the course: YouCode II Frontend Developer
 Project is created with:
 * HTML
 * CSS (BEM naming convetion)
-* Grid
 * ES6+
 	
 ## Setup
-Task list is generated based on information entered by user. User can edit the list by adding new tasks, deleting them or marking as done (with possibility of unmarking).
+It's easy! To run this project just open the link in your browser, then enter the amount in PLN and choose from the list the currency to which you want to convert. After confirmation the result will appear below. 
