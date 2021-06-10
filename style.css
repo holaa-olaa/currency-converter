@@ -68,7 +68,11 @@ html {
 }
 
 .form__button:hover {
-    background-color: hsl(219, 60%, 36%);
+    background-color: hsl(219, 60%, 38%);
+}
+
+.form__button:active {
+    background-color: hsl(219, 60%, 43%);
 }
 
 .form__paragraph {
