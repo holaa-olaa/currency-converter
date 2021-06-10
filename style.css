@@ -71,10 +71,6 @@ html {
     background-color: hsl(219, 60%, 36%);
 }
 
-.form__button--reset:hover {
-    background-color: hsl(0, 50%, 66%);
-}
-
 .form__paragraph {
     text-align: center;
     text-decoration: solid;
